@@ -1,1 +1,172 @@
-Hellp World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta name="keywords"
+	content="template, blank, standard" />
+<meta name="description"
+	content="template, blank, standard" />
+<meta http-equiv="Content-Type" 
+	content="text/html; charset=utf-8" />
+<title>Standard Blank Web Page</title>
+<style type="text/css">
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #fff;
+}
+/* ~~ Element/tag selectors ~~ */
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+.container {
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	background-color: #fff;
+	width: 960px;
+	height: 830px;
+}
+.header {
+	background-color: #FCF;
+	height: 150px;
+	width: 960px;
+	text-align: center;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+.navbar {
+	background-color: #CFF;
+	height: 26px;
+	width: 920px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 4px;
+}
+.navbar a {
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+
+.navbar a:hover  {
+	background-color: #6CF;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #6CF;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 6px;
+	padding-left: 10px;
+}
+
+.sidebar {
+	background-color: #CFC;
+	float: right;
+	height: 640px;
+	width: 160px;
+	padding-top: 10px;
+	list-style-type: none;
+}
+.sidebar a {
+	background-color: #CF9;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFC;
+	border-right-color: #9F9;
+	border-bottom-color: #9F9;
+	border-left-color: #FFC;
+	display: block;
+	width: 118px;
+	text-decoration: none;
+	padding-left: 40px;
+	height: 25px;
+	padding-top: 5px;
+}
+
+.sidebar a:hover       {
+	background-color: #CFC;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 40px;
+}
+
+
+.content {
+	background-color: #FFC;
+	height: 580px;
+	width: 760px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+}
+.footer {
+	background-color: #FC9;
+	height: 40px;
+	width: 760px;
+	text-align: right;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+    <div class="header">
+      <h1>-- Web Page --</h1>
+      <p>960 X 150 px</p>
+    </div>
+	<div class="navbar">Navigation Bar (960 X 30 px):<a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a></div>
+    <div class="sidebar">Side Bar:<br>(160 X 650 px)</br>
+      <li><a href="#">Link One&nbsp;&nbsp;</a></li>
+      <li><a href="#">Link Two&nbsp;&nbsp;</a></li>
+      <li><a href="#">Link Three</a></li>
+      <br></br>
+	<!--End of sidebar--></div>
+	<div class="content">
+	  <h1>Main\Content Panel: 800 X 600 px</h1>
+	</div>
+	<div class="footer">Footer Panel: 800 X 50 px</div>
+<!-- End of container --></div>
+</body>
+</html>
